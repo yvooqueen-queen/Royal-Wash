@@ -1,2 +1,104 @@
 # Royal-Wash
 Royal Car Wash 
+sample_dashboards:
+  -
+    category: Google Kubernetes Engine
+    id: gke-workloads-at-risk
+    display_name: GKE Workloads at Risk
+    description: "This dashboard has 12 charts using the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes) to show workloads which are at reliability and performance risks due to BestEffort and Burstable workloads running above request for CPU and memory."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-cluster-monitoring
+    display_name: GKE Cluster Monitoring
+    description: "This dashboard has 18 charts for the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes), including metrics for the worker nodes such as total allocatable CPU cores and memory; metrics for containers such as CPU and memory request utilization; metrics for Pods such as network bytes received and transmitted."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-active-idle-clusters
+    display_name: GKE Active/Idle Clusters
+    description: "This dashboard has 2 charts using the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes) to show the container count and resource usage in user namespaces within a specific period. Users can see how active and idle their clusters are."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-compute-resources-cluster-view
+    display_name: GKE Compute Resources - Cluster View
+    description: "This dashboard features filters to drill down to a specific cluster, and has 14 charts for the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes). It summarizes metrics like CPU and memory utilization as well as network sent and received bandwidth for the cluster, grouping over namespace."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-compute-resources-node-view
+    display_name: GKE Compute Resources - Node View
+    description: "This dashboard features filters to drill down to a specific cluster, and has 17 charts using the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes). It summarizes metrics like CPU and memory utilization as well as network sent and received bandwidth for nodes that make up a given cluster."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-compute-resources-workload-view
+    display_name: GKE Compute Resources - Workload View
+    description: "This dashboard features filters to drill down to a specific cluster, namespace and workload. It has 14 charts for the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes) and summarizes CPU and memory utilization as well as network sent and received bandwidth for pods that make up a given workload."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-dns-observability-cluster-view
+    display_name: GKE DNS Observability - Cluster View
+    description: "This dashboard features filters to drill down to a specific cluster. It has 6 charts for the related metrics from KubeDNS."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-jobset-interruption-playbook
+    display_name: GKE AI Training Job Interruption Troubleshooting Playbook
+    description: "This dashboard features filters to drill down to a specific jobset and a specific cluster, and has 10 charts and tables using the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes). It is intended to assist users to troubleshoot unexpected AI training job interruptions."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-nodes-pods-cluster-view
+    display_name: GKE Nodes and Pods - Cluster View
+    description: "This dashboard has 10 charts using the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes) to show how pods and containers are distributed within nodes and within namespaces. Container start, restart and autoscaler events are also plotted over time."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-optimization-signals
+    display_name: GKE Optimization Signals
+    description: "This dashboard has 10 charts using the related [Kubernetes metrics](https://cloud.google.com/monitoring/api/metrics_kubernetes) and summarize GKE cost optimization signals based on the [State of Kubernetes Cost Optimization](https://cloud.google.com/blog/products/containers-kubernetes/new-report-state-of-kubernetes-cost-optimization) report includes demand scaling, spot instance usage, cluster bin packing and workload rightsizing."
+  -
+    category: Google Kubernetes Engine
+    id: gke-dpv2-observability-cluster-flows-overview
+    display_name: GKE DPv2 Observability - Cluster Flows Overview
+    description: "This dashboard features 6 charts with overview data about the pod-to-workload traffic in your GKE cluster. Monitor how much of your traffic is dropped, see what are the most common drop reasons, all at a glance. [Google Managed Prometheus](https://cloud.google.com/managed-prometheus) and [Dataplane V2 metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/configure-dpv2-observability) must be enabled to make use of this dashboard."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-dpv2-observability-drilldown-view
+    display_name: GKE DPv2 Observability - Drilldown View
+    description: "This dashboard features 6 charts providing pod-to-workload traffic data that is groupable and filterable (e.g. by workload, namespace), letting you gain more detailed insight into the traffic within your GKE cluster. Understand which workloads generate the most traffic, drill down which pods drop traffic and what's the reason, and more. [Google Managed Prometheus](https://cloud.google.com/managed-prometheus) and [Dataplane V2 metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/configure-dpv2-observability) must be enabled to make use of this dashboard."
+    related_integrations:
+      - id: gke
+        platform: GCP
+  -
+    category: Google Kubernetes Engine
+    id: gke-tpu-node-pool-status
+    display_name: GKE TPU Node Pool Status
+    description: "Get comprehensive insights into the health of your GKE TPU multi-host node pools."
+    related_integrations:
+      - id: gke
+        platform: GCP
